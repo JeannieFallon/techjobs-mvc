@@ -17,7 +17,7 @@ import java.util.List;
  */
 public class JobData {
 
-    private static final String DATA_FILE = "job_data.csv";
+    private static final String DATA_FILE = "job_data.csv"; // constant
     private static boolean isDataLoaded = false;
 
     private static ArrayList<HashMap<String, String>> allJobs;
@@ -67,7 +67,7 @@ public class JobData {
      * with "Enterprise Holdings, Inc".
      *
      * @param column   Column that should be searched.
-     * @param value Value of teh field to search for
+     * @param value Value of the field to search for
      * @return List of all jobs matching the criteria
      */
     public static ArrayList<HashMap<String, String>> findByColumnAndValue(String column, String value) {
