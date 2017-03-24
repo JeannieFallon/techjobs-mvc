@@ -20,10 +20,10 @@ public class ListController {
 
     // constructor
     public ListController () {
-        columnChoices.put("core", "Skill");
+        columnChoices.put("core competency", "Skill");
         columnChoices.put("employer", "Employer");
         columnChoices.put("location", "Location");
-        columnChoices.put("position", "Position Type");
+        columnChoices.put("position type", "Position Type");
         columnChoices.put("all", "All");
     }
 
