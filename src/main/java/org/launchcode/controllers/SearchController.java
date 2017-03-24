@@ -29,6 +29,7 @@ public class SearchController {
     public String search(Model model, String searchType, String searchTerm) {
 
         ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
+        int numberOfResults;
 
         if(searchType.equals("all")){
             for(HashMap<String,String> job : JobData.findByValue(searchTerm)) {
@@ -40,8 +41,11 @@ public class SearchController {
             }
         }
 
+        numberOfResults = jobs.size();
+
         model.addAttribute("columns", ListController.columnChoices);
         model.addAttribute("jobs", jobs);
+        model.addAttribute("numberOfResults", numberOfResults);
 
 
         return "search";

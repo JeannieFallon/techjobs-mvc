@@ -51,6 +51,8 @@ public class ListController {
             return "list-column";
         }
 
+
+
     }
 
     @RequestMapping(value = "jobs")
